@@ -1,0 +1,342 @@
+
+#logo{
+  position: relative;
+  float:left;
+  width: 70px;
+	height: 70px;
+}
+.carre {
+  float:center;
+  height:70px;
+  background:#FBEDF7;
+  margin: auto;
+}
+.carre2 {
+  height:600px;
+  width:1000px;
+  background:rgba(255, 254, 255,0.67);
+  margin:404px;
+  padding-left:53%;
+}
+.carre3{
+  background: rgba(250, 173, 228,0.4);
+  height:1050px;
+  width:1150px;
+  position:relative;
+  margin:50px;
+  padding-left:2%;
+}
+.carre4{
+  position: relative;
+  background: transparent;
+  border-style: groove;
+  border-color: purple;
+  height: 600px;
+  width:400px;
+  display: inline-block;
+  float: left;
+}
+.carre5{
+  background: rgba(255, 254, 255,0.5);
+  height: 450px;
+  width:900px;
+  margin-left: 103%;
+  margin-top:  45px;
+}
+.carre6{
+  background: rgba(255, 254, 255,0.5);
+  height: 970px;
+  width:900px;
+  margin-left: 103%;
+  margin-top:  45px;
+}
+.carre7{
+  background: rgba(250, 173, 228,0.4);
+  height:1050px;
+  width:1350px;
+  margin:50px;
+  padding-left:2%;
+}
+.carre8{
+  background: rgba(250, 173, 228,0.4);
+  height:700px;
+  width:1150px;
+  position:relative;
+  margin:50px;
+  padding-left:2%;
+}
+.carre9{
+  background: rgba(250, 173, 228,0.4);
+  height:550px;
+  width:1150px;
+  position:relative;
+  margin:50px;
+  padding-left:2%;
+}
+body
+{
+  background-image: url("projet/image_de_fond.jpg");
+  background-attachment: fixed;
+}
+#main{
+  text-align:center;
+  font-variant: small-caps;
+  font-family:"American Typewriter", serif;
+  font-size:250%;
+
+}
+#main3{
+  text-align:center;
+  font-variant: small-caps;
+  font-family:"American Typewriter", serif;
+  font-size:200%;
+}
+#main4{
+  text-align:left;
+  font-variant:inherit;
+  font-family:"American Typewriter", serif;
+  font-size:100%;
+}
+
+#main9{
+  position:absolute;
+  left:79%;
+  top: 400px;
+  font-size: 500%;
+}
+
+#main10{
+  position: absolute;
+  left:79%;
+  top: 650px;
+  font-size: 650%;
+}
+
+#main11{
+  text-align: center;
+  font-family:"American Typewriter", serif;
+
+}
+#main5{
+  text-align:left;
+  font-style: normal;
+  font-variant: small-caps;
+  font-family:"American Typewriter", serif;
+  font-size:150%;
+}
+#m1{
+  position:absolute;
+  left:2%;
+  top:150px;
+}
+#m12{
+  position:absolute;
+  left: 27%;
+  top:150px;
+}
+#m2{
+  float: right;
+  position:absolute;
+  left: 52%;
+  top:150px;
+
+}
+#m21{
+
+  position:absolute;
+  left: 77%;
+  top:150px;
+}
+#slide{
+  position: absolute;
+  left:1%;
+  top: 500px;
+  font-size: 250%;
+}
+#main2{
+  font-family: :"American Typewriter", serif;
+  font-style: italic;
+  position:absolute;
+  left:47%;
+  top: 50px;
+  font-size: 70%;
+}
+#main6{
+  font-family: "American Typewriter", serif;
+  position: absolute;
+  left:53%;
+  top: 600px;
+  font-size: 100%;
+  text-align: justify;
+}
+#main7{
+  font-variant: small-caps;
+  font-family:"American Typewriter", serif;
+  position: absolute;
+  left:53%;
+  font-size:200%;
+}
+#main8{
+  padding-left: 87%;
+  font-family:"American Typewriter", serif;
+  font-size:90%;
+}
+#galerie{
+      position: relative;
+      width: 1024px;
+      height:768px;
+    }
+#galerie img {
+      position:absolute;
+      display:none;
+    }
+#galerie .active {
+      display:block;
+    }
+    * {box-sizing:border-box}
+
+.carte {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.carte-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "American Typewriter", serif;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.carte:hover .carte-inner {
+  transform: rotateY(180deg);
+}
+
+.carte-front, .carte-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.carte-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.carte-back {
+  background-color: pink;
+  color: white;
+  transform: rotateY(180deg);
+}
+.bouton {
+  border-radius: 4px;
+  background-color: pink;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bouton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bouton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bouton:hover span {
+  padding-right: 25px;
+}
+
+.bouton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+.navbar a {
+  float: left;
+  font-size: 11px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+    /* derouler */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+    /* bouton du derouler */
+.dropdown .dropbtn {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 10px 10px;
+  background-color: inherit;
+  margin: 0;
+}
+
+    /* changement de couleur lorsqu'on click */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+    /* contenu du deroulant */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFE2FF;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+    /* l'interieur du bouton */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Ajouter une couleur d’arrière-plan grise */
+.dropdown-content a:hover {
+    background-color: #FFF2FF;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#place{
+  top: 100px;
+  left: 10%;
+}

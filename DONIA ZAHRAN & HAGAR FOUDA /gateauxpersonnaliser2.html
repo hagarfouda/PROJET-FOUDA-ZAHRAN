@@ -1,0 +1,349 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style2YB.css">
+ <meta charset="UTF-8">
+ <title>Your Bakery, Votre patisserie personnalisée en ligne </title>
+
+ <div class="carre">
+   <p>
+     <a href="indexYB - Copie.html">
+       <img src ="projet/logo.png" id ="logo"></a>
+     <p id ="main">
+       Your Bakery
+     </p>
+     <br>
+     <p id ="main2">
+      Conçu par vous, pâtissé par nous </p>
+ </p>
+ </div>
+
+  </head>
+  <br>
+<body>
+<div class="carre7">
+  <div class="carre4">
+    <div class="vis">
+    <img id ="test27" class="taille" src="projet/brisure de pistache.jpg" style ="display:none"/>
+    <img id ="test26" class="taille" src="projet/brisure d'amande.jpg" style ="display:none"/>
+    <img id ="test25" class="taille" src="projet/fraise tagada.jpg" style ="display:none"/>
+    <img id ="test25" class="taille" src="projet/fraise tagada.jpg" style ="display:none"/>
+    <img id ="test24" class="taille" src="projet/ourson en chocolat (2).jpg" style ="display:none"/>
+    <img id ="test23" class="taille" src="projet/fruit rouge.jpg" style ="display:none"/>
+    <img id ="test22" class="taille" src="projet/mangue.jpg" style ="display:none"/>
+      <img id ="test21" class="taille" src="projet/vermicelle.jpg" style ="display:none"/>
+      <img id ="test20" class="taille" src="projet/petite étoile 2.png" style ="display:none"/>
+      <div id="test19" class="beurre" style="display:none"></div>
+      <div id="test18" class="americain" style="display:none"></div>
+       <div id="test17" class="miroir" style="display:none"></div>
+       <div id="test16" class="royal" style="display:none"></div>
+       <img id ="test15" class="taille" src="projet/pate (2).jpg" style ="display:none"/>
+       <img id ="test14" class="taille" src="projet/creme-bavaroise-4.jpg" style ="display:none"/>
+       <img id ="test13" class="taille" src="projet/mousse fruit exotique (2).jpg" style ="display:none"/>
+       <img id ="test12" class="taille" src="projet/mousse au choco (2).jpg" style ="display:none"/>
+  <img id ="test11" class="taille"src="projet/creme fruit rouge.jpg" style ="display:none"/>
+  <img id ="test10" class="taille"src="projet/creme passion.jpg" style ="display:none"/>
+  <img id ="test9" class="taille" src="projet/ganache daim.jpg" style ="display:none"/>
+  <img id ="test8" class="taille" src="projet/ganache oréo.jpg" style ="display:none"/>
+<img id ="test7" class="taille" src="projet/ganache choco.jpg" style ="display:none"/>
+<img id ="test6" class="taille" src="projet/ganache chocolat blanc.jpg" style ="display:none"/>
+<img id ="test5" class="taille" src="projet/praliné1.jpg" style ="display:none"/>
+<img id ="test4" class="taille" src="projet/pralin.jpg" style ="display:none"/>
+<img id ="test2" class="taille" src="projet/Sablé.jpg" style ="display:none"/>
+<img id ="test1" class="taille" src="projet/génoise chocolat.png" style ="display:none"/>
+      <img id ="test" class="taille" src="projet/génoise nature.png" style ="display:none"/>
+
+</div>
+</div>
+
+
+  <div class="carre6"> <button onclick="reins()"> Réinitialiser le prix  </button>
+    <a id ="pr"> Prix total :</a> <li id ="main8" value="0"> 0 € </li>  <br>
+      <ul id ="demo"></ul>
+      <h3> Commençons par le commencement : </h3>
+<div class="navbar">
+<div class="dropdown">
+ <button class="dropbtn">Forme du Gateau
+   <i class="fa fa-caret-down"></i>
+ </button>
+ <div class="dropdown-content">
+   <a href="#" id ="r" onclick="formeR()"> Rond</a>
+   <a href="#" id ="r" onclick="formeRe()"> Rectangulaire</a>
+   <a href="#" id ="r" onclick="formeC()"> En Coeur </a>
+</div></div></div>
+<div class="navbar">
+    <div class="dropdown">
+     <button class="dropbtn"> Nombres de parts
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+       <a href="#">
+          6 personnes  </a>
+       <a href="#">
+          10 personnes </a>
+       <a href="#">
+          16 personnes </a>
+       <a href="#" id ="seize" value ="4" onclick="prix1(4)">
+          20 personnes (+4€) </a>
+       <a href="#" value ="5" onclick="prix1(5)">
+          26 personnes (+5€)</a>
+       <a href="#" value ="7" onclick="prix1(7)">
+          30 personnes (+7€)</a>
+
+</div></div></div><br> <br>
+
+<div>
+  <form>
+<table>
+  <tr>
+    <h3>
+      Types de biscuit: </h3>
+
+   <td><div class="navbar">
+     <div class="dropdown">
+    <button class="dropbtn">Genoise :
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#" onclick="prix1(5)">x1 (+5€)</a>
+      <a href="#" onclick="prix1(10)">x2 (+10€)</a>
+    </div>
+  </div>
+</div></td>
+  <td> <p>
+    <input id ="Nature" type= "checkbox" name="biscuit" value="nature" onclick="Visualisation1()">
+      Nature</p> </td>
+
+ <td> </td>
+<td> <p>
+  <input id ="Chocolat" type= "checkbox" name="biscuit" value="chocolat" onclick="Visualisation2()">
+   Chocolat</p></td>
+</tr><br><tr>
+   <td> <div class="dropdown">
+    <button class="dropbtn"> Sablé :
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#" onclick="prix1(6)">x1 (+6€)</a>
+      <a href="#" onclick="prix1(12)">x2 (+12€)</a>
+    </div>
+  </div>
+</td>
+  <td> <p><input id="Spis" type= "checkbox" name="biscuit" value="pistache" onclick="Visualisation3()">
+    Pistache </p> </td>
+
+ <td> </td>
+<td> <p><input id ="Schoc" type= "checkbox" name="biscuit" value="chocolat" onclick="Visualisation3()">
+   Chocolat</p></td>
+</tr>
+<tr>
+ <td> </td>
+</tr><br>
+<tr><div class="navbar">
+   <td> <div class="dropdown">
+    <button class="dropbtn"> Pranilé :
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#" onclick="prix1(7)">x1 (+7€)</a>
+      <a href="#" onclick="prix1(14)">x2 (+7€)</a>
+    </div>
+  </div>
+</div></td>
+  <td> <p><input id="Pchoc" type= "checkbox" name="biscuit" value="chocolat" onclick="Visualisation4()">
+    Chocolat</p> </td>
+  <td> </td>
+<td><p> <input id ="PCBS" type= "checkbox" name="biscuit" value="caramel" onclick="Visualisation5()">
+  Caramel beurre salé </p></td>
+
+ <td> </td>
+</tr></table> <table>
+  <tr>
+     <br>
+<h3>
+  Garnitures:
+      </h3>
+
+   <td> <div class="dropdown">
+    <button class="dropbtn">Ganache :
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#" onclick= "prix1(3)">x1 (+3€)</a>
+      <a href="#" onclick="prix(6)">x2 (+6€)</a>
+    </div>
+  </div>
+</td>
+
+<td> <p><input id ="GCB" type= "checkbox" name="garniture" value="chocolat blanc" onclick="Visualisation6()">
+   Chocolat blanc </p></td>
+ <td> </td>
+ <td> <p><input id ="GC" type= "checkbox" name="garniture" value="café" onclick="Visualisation7()">
+   Café </p></td>
+ <td> </td>
+ <tr></tr>
+ <tr>
+ <td> </td>
+    </tr>
+   <td> <div class="dropdown">
+    <button class="dropbtn">Ganache gourmande :
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#" onclick="prix1(4)">x1 (+4€)</a>
+      <a href="#" onclick ="prix(8)">x2 (+8€)</a>
+    </div>
+  </div>
+
+<td> <p><input id="O" type= "checkbox" name="garniture" value="M'MS" onclick="Visualisation8()">
+   Oreo </p></td>
+ <td> </td>
+ <td> <p><input id ="D" type= "checkbox" name="garniture" value="daim" onclick="Visualisation9()">
+    Daim </p> </td>
+    </tr>
+<td></td>
+<tr>
+<td><div class="dropdown">
+ <button class="dropbtn">Creme fruitée
+   <i class="fa fa-caret-down"></i>
+ </button>
+ <div class="dropdown-content">
+   <a href="#" onclick="prix1(5)">x1(+5€)</a>
+   <a href="#" onclick="prix(10)">x2(+10€)</a>
+ </div>
+</div>
+</td>
+ <td> <p><input id ="c1" type= "checkbox" name="garniture" value="passion" onclick="Visualisation10()">
+   Fruit de la passion </p></td>
+
+ <td> </td>
+<td><p>
+  <input id ="c2" type= "checkbox" name="garniture" value="framboise" onclick="Visualisation11()">
+  Fruit rouge </p></td>
+
+</tr>
+
+<td><div class="dropdown">
+ <button class="dropbtn">Mousse :
+   <i class="fa fa-caret-down"></i>
+ </button>
+ <div class="dropdown-content">
+   <a href="#" onclick="prix(3)">x1 (+3€)</a>
+   <a href="#" onclick="prix(6)">x2(+6€)</a>
+ </div>
+</div>
+</td>
+  <td> <p><input id="mchoc" type= "checkbox" name="garniture" value="Mousseline" onclick="Visualisation12()">
+     Chocolat </p></td>
+  <td> </td>
+ <td> <p><input id="fe" type= "checkbox" name="garniture" value="fruit exotique" onclick="Visualisation13()">
+   Fruit exotique </p></td>
+        <tr>
+  <td> </td>
+</tr>
+</table>
+
+<h3>On approche de la fin (ou de la faim): </h3>
+<table><tr>
+  <td><div class="dropdown">
+   <button class="dropbtn">Glacage :
+     <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-content">
+     <a href="#" onclick="prix(4)">x1 (+4€)</a>
+     <a href="#" onclick="prix(8)">x2 (+8€)</a>
+   </div>
+  </div>
+<td><p><input id="royal" type= "checkbox" name="glacage" value="royal" onclick="Visualisation16()">Glacage Royal</p> </td>
+<td><p><input id ="miroir" type= "checkbox" name="glacage" value="miroir" onclick="Visualisation17()"> Glacage Miroir </p> </td></tr>
+<tr><td> </td>
+<td><p><input id="americain" type= "checkbox" name="glacage" value="à l'américaine" onclick="Visualisation18()"> Glacage à l'américaine</p></td>
+<td><p><input id="pbeurre" type= "checkbox" name="glacage" value="pate au sucre" onclick="Visualisation19()"> Pâte au sucre</p></td></tr>
+</table>
+
+<table>
+  <h3>
+  Decors:
+    </h3>
+   <tr>
+<td> <div class="dropdown">
+ <button class="dropbtn">Decors en sucre :
+   <i class="fa fa-caret-down"></i>
+ </button>
+ <div class="dropdown-content">
+   <a href="#" onclick="prix1(2)">x1 (+2€)</a>
+   <a href="#" onclick="prix1(4)">x2 (+4€)</a>
+ </div>
+</div>
+</td>
+  <td> <p><input id ="vermicelles" type= "checkbox" name="décors" value="vermicelles" onclick="Visualisation20()">
+    Vermicelle </p></td>
+  <td> </td>
+ <td> <p><input id ="petoiles" type= "checkbox" name="décors" value="étoile" onclick="Visualisation21()">
+   Petites étoiles </p></td>
+<tr>
+  <td>  <div class="dropdown">
+     <button class="dropbtn"> Fruits :
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+       <a href="#" onclick="prix1(4)">x1 (+4€)</a>
+       <a href="#" onclick="prix1(8)">x2(+8€)</a>
+     </div>
+    </div>
+   </td>
+ <td> <p><input id="mangua" type= "checkbox" name="décors" value="mangue" onclick="Visualisation22()">
+   Mangue </p></td>
+  <td> </td>
+    </tr>
+    <tr>
+  <td> </td>
+ <td> <p><input id="dfr" type= "checkbox" name="décors" value="fruit rouge" onclick="Visualisation23()">
+   Fruit rouge </p></td>
+    </tr>
+<tr>
+<td><div class="dropdown">
+ <button class="dropbtn">Bonbons :
+   <i class="fa fa-caret-down"></i>
+ </button>
+ <div class="dropdown-content">
+   <a href="#" onclick="prix1(2)">x1 (+2€)</a>
+   <a href="#" onclick="prix1(4)">x2 (+4€)</a>
+ </div>
+</div>
+ </td>
+  <td> <p><input id="tagada" type= "checkbox" name="décors" value="tagada" onclick="Visualisation24()"> Fraise Tagada </p></td>
+
+  <td> </td>
+ <td> <p><input id="ourson" type= "checkbox" name="décors" value="ourson" onclick="Visualisation25()"> Ourson en chocolat</p> </td>
+  <td> </td>
+</tr>
+<tr>
+<td> <div class="dropdown">
+ <button class="dropbtn">Gourmandises :
+   <i class="fa fa-caret-down"></i>
+ </button>
+ <div class="dropdown-content">
+   <a href="#" onclick="prix1(4)">x1 (+4€)</a>
+   <a href="#" onclick="prix1(8)">x2 (+8€)</a>
+ </div>
+</div>
+</td>
+  <td> <p><input id ="kinder" type= "checkbox" name="décors" value="pécan" onclick="Visualisation26()">
+     Kinder </p> </td>
+  <td> </td>
+ <td> <p><input id ="kk" type= "checkbox" name="décors" value="kitkat" onclick="Visualisation27()">
+   Kit Kat </p></td>
+  <td> </td>
+    </tr>
+      </table>
+<button>
+  <a href="formulaire.html"> Valider  </a>
+ </button>
+</form></div>
+  </div>
+</div>
+</div>
+
+<script src = "Visualisation.js" >
+</script>
+</body>
